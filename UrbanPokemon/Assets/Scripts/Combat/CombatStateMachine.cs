@@ -38,18 +38,25 @@ public class CombatStateMachine : MonoBehaviour {
 	public Button forfeitBtn;
 	public Button itemBtn;
 	public Button switchBtn;
+<<<<<<< HEAD
 	public Canvas canvas;
 	public Button defaultButton;
 	public Text playerHp;
 	public Text opponentHp;
+=======
+
+>>>>>>> master
 	// Use this for initialization
 	void Start () {
 		currentPhase = CombatPhases.PLAYERMOVE;
 		battleStarterScript = GameObject.FindGameObjectWithTag("BattleStarter").GetComponent<BattleStarterScript>();
 		player = battleStarterScript.playerMonsters[0];
 		opponent = battleStarterScript.opponent.monsters[0];
+<<<<<<< HEAD
 		playerHp.text = "HP: " + player.health;
 		opponentHp.text = "HP: " + opponent.health;
+=======
+>>>>>>> master
 		Instantiate(snake, new Vector3(4f, 2f, 0f), Quaternion.identity);
 		Instantiate(bigSnake, new Vector3(-4f, -3f, 0f), bigSnake.transform.rotation);
 	}
@@ -129,8 +136,13 @@ public class CombatStateMachine : MonoBehaviour {
 
 	}
 
+<<<<<<< HEAD
 	public void playerBagMenu() {
 		Debug.Log ("Bag");
+=======
+	public void PlayerAttackMenu() {
+		Debug.Log ("Called");
+>>>>>>> master
 	}
 
 	public void PlayerAttack(){ // not what we 

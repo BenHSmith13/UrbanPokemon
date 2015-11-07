@@ -34,7 +34,10 @@ public class GameControl : MonoBehaviour {
 			monster.moves = new List<SimpleMove>();
 			monster.status = "OK";
 			monster.type = "snake";
+<<<<<<< HEAD
 			monster.health = 100;
+=======
+>>>>>>> master
 			monster.id = 1;
 			SimpleMove move = new SimpleMove();
 			move.name = "Bite";
@@ -48,6 +51,7 @@ public class GameControl : MonoBehaviour {
 			bNpc.finishBattleText = "You suck!";
 			bNpc.moneyGiven = 10;
 			bNpc.monsters = new List<SimpleMonster>();
+<<<<<<< HEAD
 			monster = new SimpleMonster();
 			monster.name = "Snake";
 			monster.level = 10;
@@ -64,6 +68,8 @@ public class GameControl : MonoBehaviour {
 			move.id = 1;
 			move.type = "snake";
 			monster.moves.Add (move);
+=======
+>>>>>>> master
 			bNpc.monsters.Add(monster);
 			bNpc.name = "Ben Call";
 			bNpc.id = 1;
