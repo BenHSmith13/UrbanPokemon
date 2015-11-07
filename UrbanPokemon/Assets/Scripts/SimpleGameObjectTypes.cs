@@ -7,16 +7,19 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 [Serializable]
 public class SimpleMonster {
+	public int id;
 	public string name;
 	public int level;
 	public int totalExp;
 	public List <SimpleMove> moves;
 	public string type;
 	public string status;
+	public int health;
 }
 
 [Serializable]
 public class SimpleMove {
+	public int id;
 	public int baseAttack;
 	public int accuracy;
 	public string name;
@@ -25,6 +28,7 @@ public class SimpleMove {
 
 [Serializable]
 public class SimpleNPC {
+	public int id;
 	public string name;
 	public string conversationText;
 	public int sceneNumber;
@@ -34,6 +38,7 @@ public class SimpleNPC {
 
 [Serializable]
 public class SimpleBattleNpc {
+	public int id;
 	public string name;
 	public string startBattleText;
 	public string finishBattleText;
@@ -51,6 +56,7 @@ public class SimpleTrophy { // probably should call this something else
 
 [Serializable]
 public class SimpleItem {
+	public int id;
 	public int buyCost;
 	public int sellCost;
 	public string name;
