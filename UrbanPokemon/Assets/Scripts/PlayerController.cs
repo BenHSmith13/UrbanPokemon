@@ -17,6 +17,11 @@ public class PlayerController : MonoBehaviour {
 		animator = gameObject.GetComponent<Animator>();
 	}
 
+	void OnTriggerEnter2D(Collider2D other){
+		Debug.Log (other.gameObject.ToString());
+		GameControl.EnterBattleScene(other.gameObject.GetComponent<BattleNpc>().data.id);
+	}
+
 
 	void Update () {
 		if(Input.GetAxis("Horizontal") == 0f){
