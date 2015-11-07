@@ -30,13 +30,17 @@ public class SimpleMonster {
 	public float accuracyMultiplier;
 
 	void takeHit(int damage){
-		hp -= damage;
+		if (damage - defence > 1) { hp -= (damage - defence); }
+		else { hp -= 1; }
 		if (hp <= 0) { die (); }
 	}
 	
 	void heal(int healthPac){
 		hp += healthPac;
 		if (hp > totalHp) { hp = totalHp; }
+	}
+
+	void attackEnemy(string move){
 	}
 
 	void forgetMove(SimpleMove move){
@@ -79,11 +83,20 @@ public class SimpleMonster {
 
 [Serializable]
 public class SimpleMove {
-	public int id;
+	public SimpleMove(string moveName, int moveBaseAttack, int moveAccuracy, string moveType, string moveEffectedAttribute, int moveAttribteAmount){
+		name = moveName;
+		baseAttack = moveBaseAttack;
+		accuracy = moveAccuracy;
+		type = moveType;
+		effectedAttribute = moveEffectedAttribute;
+		attribteAmount = moveAttribteAmount;
+	}
+	public string name;
 	public int baseAttack;
 	public int accuracy;
-	public string name;
 	public string type;
+	public string effectedAttribute;
+	public int attribteAmount;
 }
 
 [Serializable]
