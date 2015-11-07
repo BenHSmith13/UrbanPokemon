@@ -11,6 +11,7 @@ public class GameControl : MonoBehaviour {
 	public static List <SimpleItem> items;
 	public static List <SimpleNPC> simpleNPCs;
 	public static List <SimpleMonster> playersMonsters;
+
 	void Awake(){
 		PlayerData data = DataScript.Load();
 		Debug.Log(data.name);
