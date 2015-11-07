@@ -59,7 +59,7 @@ public class CombatStateMachine : MonoBehaviour {
 			loseBattle();
 			break;
 		case CombatPhases.WIN:
-			winBattle();
+			winBattle(); 
 			break;
 		}
 	}
