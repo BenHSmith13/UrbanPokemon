@@ -12,24 +12,24 @@ public class Pidgeon : SimpleMonster {
 	Pidgeon (int initLevel, string petName) {
 		type = "pidgeon";
 		name = petName;
-		hpMulitplier = 1.1;
-		expMultiplier = 1.7;
-		attackMultiplier = 1.3;
-		defenceMultiplier = 1.1;
-		speedMultipler = 1.5;
-		accuracyMultiplier = 1.4;
+		hpMulitplier = 1.1f;
+		expMultiplier = 1.7f;
+		attackMultiplier = 1.3f;
+		defenceMultiplier = 1.1f;
+		speedMultipler = 1.5f;
+		accuracyMultiplier = 1.4f;
 		initStats(level);
 	}
 	
 	void initStats(int initLevel){
-		level = initLevel;
-		totalHp = (int)10*hpMulitplier + initLevel*hpMulitplier;
-		totalExp = 0;
-		attack = (int)5*attackMultiplier + initLevel/2 * attackMultiplier;
-		defence = (int)5*defenceMultiplier + initLevel/2 * defenceMultiplier;
-		speed = (int)5*speedMultipler + initLevel/2 * speedMultipler;
-		accuracy = (int)5*accuracyMultiplier + initLevel/2 * accuracyMultiplier;
-		initMoveList (initLevel);
+//		level = initLevel;
+//		totalHp = (int)10*hpMulitplier + initLevel*hpMulitplier;
+//		totalExp = 0;
+//		attack = (int)5*attackMultiplier + initLevel/2 * attackMultiplier;
+//		defence = (int)5*defenceMultiplier + initLevel/2 * defenceMultiplier;
+//		speed = (int)5*speedMultipler + initLevel/2 * speedMultipler;
+//		accuracy = (int)5*accuracyMultiplier + initLevel/2 * accuracyMultiplier;
+//		initMoveList (initLevel);
 	}
 	
 	void initMoveList(int initLevel){
@@ -65,14 +65,14 @@ public class Pidgeon : SimpleMonster {
 	}
 	
 	void levelUp(){
-		level ++;
-		totalHp += (int)level*hpMulitplier;
-		totalExp = 0;
-		attack = (int)level/2 * attackMultiplier;
-		defence = (int)level/2 * defenceMultiplier;
-		speed = (int)level/2 * speedMultipler;
-		accuracy = (int)level/2 * accuracyMultiplier;
-		newLevelUpMove ();
+//		level ++;
+//		totalHp += (int)level*hpMulitplier;
+//		totalExp = 0;
+//		attack = (int)level/2 * attackMultiplier;
+//		defence = (int)level/2 * defenceMultiplier;
+//		speed = (int)level/2 * speedMultipler;
+//		accuracy = (int)level/2 * accuracyMultiplier;
+//		newLevelUpMove ();
 	}
 	
 }

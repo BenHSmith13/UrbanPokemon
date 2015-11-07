@@ -74,7 +74,7 @@ public class SimpleMonster {
 	
 	public void die(){
 		//TODO: kill your monster
-	};
+	}
 }
 
 [Serializable]

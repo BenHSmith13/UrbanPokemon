@@ -2012,7 +2012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8f61faf0a164f20885f887ac6ce45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcPrefab: {fileID: 199212, guid: a29fd3f14f39845a48bff3cf84302c6e, type: 2}
+  npcPrefab: {fileID: 143572, guid: d794ecf074dcd47d0a0d7fc78978bb0a, type: 2}
   battleStarter: {fileID: 138018, guid: aa457284b9f7346c2b2d192f9431f152, type: 2}
 --- !u!4 &1452899856
 Transform:

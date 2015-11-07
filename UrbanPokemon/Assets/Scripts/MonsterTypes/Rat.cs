@@ -12,24 +12,24 @@ public class Rat : SimpleMonster {
 	Rat (int initLevel, string petName) {
 		type = "rat";
 		name = petName;
-		hpMulitplier = 1.3;
-		expMultiplier = 1.3;
-		attackMultiplier = 1.1;
-		defenceMultiplier = 1.5;
-		speedMultipler = 1.1;
-		accuracyMultiplier = 1.1;
+		hpMulitplier = 1.3f;
+		expMultiplier = 1.3f;
+		attackMultiplier = 1.1f;
+		defenceMultiplier = 1.5f;
+		speedMultipler = 1.1f;
+		accuracyMultiplier = 1.1f;
 		initStats(level);
 	}
 	
 	void initStats(int initLevel){
-		level = initLevel;
-		totalHp = (int)10*hpMulitplier + initLevel*hpMulitplier;
-		totalExp = 0;
-		attack = (int)5*attackMultiplier + initLevel/2 * attackMultiplier;
-		defence = (int)5*defenceMultiplier + initLevel/2 * defenceMultiplier;
-		speed = (int)5*speedMultipler + initLevel/2 * speedMultipler;
-		accuracy = (int)5*accuracyMultiplier + initLevel/2 * accuracyMultiplier;
-		initMoveList (initLevel);
+//		level = initLevel;
+//		totalHp = (int)10*hpMulitplier + initLevel*hpMulitplier;
+//		totalExp = 0;
+//		attack = (int)5*attackMultiplier + initLevel/2 * attackMultiplier;
+//		defence = (int)5*defenceMultiplier + initLevel/2 * defenceMultiplier;
+//		speed = (int)5*speedMultipler + initLevel/2 * speedMultipler;
+//		accuracy = (int)5*accuracyMultiplier + initLevel/2 * accuracyMultiplier;
+//		initMoveList (initLevel);
 	}
 	
 	void initMoveList(int initLevel){
@@ -65,14 +65,14 @@ public class Rat : SimpleMonster {
 	}
 	
 	void levelUp(){
-		level ++;
-		totalHp += (int)level*hpMulitplier;
-		totalExp = 0;
-		attack = (int)level/2 * attackMultiplier;
-		defence = (int)level/2 * defenceMultiplier;
-		speed = (int)level/2 * speedMultipler;
-		accuracy = (int)level/2 * accuracyMultiplier;
-		newLevelUpMove ();
+//		level ++;
+//		totalHp += (int)level*hpMulitplier;
+//		totalExp = 0;
+//		attack = (int)level/2 * attackMultiplier;
+//		defence = (int)level/2 * defenceMultiplier;
+//		speed = (int)level/2 * speedMultipler;
+//		accuracy = (int)level/2 * accuracyMultiplier;
+//		newLevelUpMove ();
 	}
 	
 }
