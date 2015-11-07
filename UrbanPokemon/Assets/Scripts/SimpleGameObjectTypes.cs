@@ -91,6 +91,10 @@ public class SimpleMove {
 		effectedAttribute = moveEffectedAttribute;
 		attribteAmount = moveAttribteAmount;
 	}
+	public SimpleMove(){
+
+	}
+	public int id;
 	public string name;
 	public int baseAttack;
 	public int accuracy;
