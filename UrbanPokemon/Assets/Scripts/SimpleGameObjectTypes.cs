@@ -20,11 +20,8 @@ public class SimpleMonster {
 	public List <SimpleMove> moves;
 	public string type;
 	public string status;
-<<<<<<< HEAD
+
 	public int health;
-<<<<<<< HEAD
-=======
->>>>>>> e445d99e575ed498aa44d9b45c609b6fe15835c1
 	public float hpMulitplier;
 	public float expMultiplier;
 	public float attackMultiplier;
@@ -78,11 +75,6 @@ public class SimpleMonster {
 	public void die(){
 		//TODO: kill your monster
 	};
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> e445d99e575ed498aa44d9b45c609b6fe15835c1
 }
 
 [Serializable]
