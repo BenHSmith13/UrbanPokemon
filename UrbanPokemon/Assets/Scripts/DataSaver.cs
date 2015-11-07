@@ -3,11 +3,12 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Collections;
 using UnityEngine;
+using System.Collections.Generic;
 
 public static class DataScript{
 	public static void Save(PlayerData data){
 		BinaryFormatter bf = new BinaryFormatter();
-		FileStream file = File.Create(Application.persistentDataPath + "/GameData.dat");
+		FileStream file = File.Create(Application.persistentDataPath + "/TestGameData.dat");
 		if(data != null){
 			bf.Serialize(file, data);
 		}
@@ -15,9 +16,9 @@ public static class DataScript{
 	}
 	
 	public static PlayerData Load(){
-		if (File.Exists(Application.persistentDataPath + "/GameData.dat")) {
+		if (File.Exists(Application.persistentDataPath + "/TestGameData.dat")) {
 			BinaryFormatter bf = new BinaryFormatter();
-			FileStream file = File.Open(Application.persistentDataPath + "/GameData.dat", FileMode.Open);
+			FileStream file = File.Open(Application.persistentDataPath + "/TestGameData.dat", FileMode.Open);
 			PlayerData data = (PlayerData)bf.Deserialize(file);
 			file.Close();
 			return data;
@@ -30,10 +31,12 @@ public static class DataScript{
 public class PlayerData {
 	public float playerXPos;
 	public float playerYPos;
-	public SimpleMonster[] monsters;
+	public List <SimpleMonster> monsters = new List<SimpleMonster>();
 	public int money;
-	public string name;
-	public SimpleTrophy[] trophies;
+	public string name = "uninitialized";
+	public List <SimpleTrophy> trophies = new List<SimpleTrophy>();
+	public List <SimpleItem> items = new List<SimpleItem>();
+	public List <SimpleNPC> simpleNpcs = new List<SimpleNPC>(); 
 
 }
 
